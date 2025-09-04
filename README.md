@@ -85,11 +85,10 @@ Replace `$DATA_NAME` with one of the dataset names (e.g., ETTh1, Weather, etc.).
 If you find this project helpful, please cite us:
 
 ```bibtex
-@inproceedings{huang2025time,
-  title     = {TimeBase: The Power of Minimalism in Long-term Time Series Forecasting},
-  author    = {Qihe Huang and Zhengyang Zhou and Kuo Yang and Zhongchao Yi and Xu Wang and Yang Wang},
-  booktitle = {Proceedings of the Forty-Second International Conference on Machine Learning (ICML)},
-  year      = {2025}
+@inproceedings{huangtimebase,
+  title={TimeBase: The Power of Minimalism in Efficient Long-term Time Series Forecasting},
+  author={Huang, Qihe and Zhou, Zhengyang and Yang, Kuo and Yi, Zhongchao and Wang, Xu and Wang, Yang},
+  booktitle={Forty-second International Conference on Machine Learning}
 }
 ```
 
