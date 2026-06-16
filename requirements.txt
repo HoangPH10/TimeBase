@@ -1,0 +1,27 @@
+# Core dependencies
+torch>=1.8.0
+torchvision>=0.9.0
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+scikit-learn>=1.0.0
+scipy>=1.5.0
+
+# Model profiling and FLOPs counting
+thop
+
+# Progress bars
+tqdm>=4.62.0
+
+# Tensor operations
+einops>=0.3.0
+
+# Time series specific models
+pmdarima
+fbm>=0.3.0
+
+# Wavelets (for FEDformer)
+PyWavelets
+
+# Additional utilities
+pyyaml>=5.4.0
