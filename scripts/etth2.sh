@@ -14,7 +14,7 @@ seq_len=720
 gpu=1
 
 pred_len=96
-uv run -u run_longExp.py \
+uv run python -u run_longExp.py \
     --is_training 1 \
     --orthogonal_weight 0.2 \
     --root_path "$root_path_name" \
@@ -36,7 +36,7 @@ uv run -u run_longExp.py \
     --learning_rate 2e-1 > "$dir/${model_id_name}_${seq_len}_${pred_len}.log"
 
 pred_len=192
-uv run -u run_longExp.py \
+uv run python -u run_longExp.py \
     --is_training 1 \
     --orthogonal_weight 0.08 \
     --root_path "$root_path_name" \
@@ -59,7 +59,7 @@ uv run -u run_longExp.py \
 
 
 pred_len=336
-uv run -u run_longExp.py \
+uv run python -u run_longExp.py \
     --is_training 1 \
     --orthogonal_weight 0.12 \
     --root_path "$root_path_name" \
@@ -82,7 +82,7 @@ uv run -u run_longExp.py \
 
 
 pred_len=720
-uv run -u run_longExp.py \
+uv run python -u run_longExp.py \
     --is_training 1 \
     --orthogonal_weight 0.12 \
     --root_path "$root_path_name" \

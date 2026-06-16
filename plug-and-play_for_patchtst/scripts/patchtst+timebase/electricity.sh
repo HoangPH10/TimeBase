@@ -20,7 +20,7 @@ for lr in 1e-2 5e-3 1e-3 5e-4 1e-4; do #  5e-1 1e-1
 for seq_len in 720; do
 for pred_len in 96 192 #336 720 #96 192 336 720
 do
-    uv run -u run_longExp.py \
+    uv run python -u run_longExp.py \
       --random_seed $random_seed \
       --is_training 1 \
       --root_path $root_path_name \

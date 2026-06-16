@@ -11,7 +11,7 @@ for seqLen in 36 48 60 72 144 288
 do
 for pred_len in 24 576
 do
-uv run -u run.py \
+uv run python -u run.py \
   --is_training 1 \
   --root_path .../dataset/ \
   --data_path ETTm1.csv \
@@ -32,7 +32,7 @@ uv run -u run.py \
   --d_model 512 \
   --itr 1 >../logs/LookBackWindow/FEDformer_ETTm2_$seqLen'_'$pred_len.log
 
-uv run -u run.py \
+uv run python -u run.py \
   --is_training 1 \
   --root_path .../dataset/ \
   --data_path ETTm2.csv \
@@ -60,7 +60,7 @@ do
 for pred_len in 24 720
 do
 # ETTh1
-uv run -u run.py \
+uv run python -u run.py \
   --is_training 1 \
   --root_path .../dataset/ \
   --data_path ETTh1.csv \
@@ -82,7 +82,7 @@ uv run -u run.py \
   --itr 1 >../logs/LookBackWindow/FEDformer_ETTh1_$seqLen'_'$pred_len.log
 
 # ETTh2
-uv run -u run.py \
+uv run python -u run.py \
   --is_training 1 \
   --root_path .../dataset/ \
   --data_path ETTh2.csv \
@@ -104,7 +104,7 @@ uv run -u run.py \
   --itr 1 >../logs/LookBackWindow/FEDformer_ETTh2_$seqLen'_'$pred_len.log
 
 ## electricity
-uv run -u run.py \
+uv run python -u run.py \
  --is_training 1 \
  --root_path .../dataset/ \
  --data_path electricity.csv \
@@ -125,7 +125,7 @@ uv run -u run.py \
  --itr 1 >../logs/LookBackWindow/FEDformer_electricity_$seqLen'_'$pred_len.log
 
 # exchange
-uv run -u run.py \
+uv run python -u run.py \
  --is_training 1 \
  --root_path .../dataset/ \
  --data_path exchange_rate.csv \
@@ -146,7 +146,7 @@ uv run -u run.py \
  --itr 1 >../logs/LookBackWindow/FEDformer_exchange_rate_$seqLen'_'$pred_len.log
 
 # traffic
-uv run -u run.py \
+uv run python -u run.py \
  --is_training 1 \
  --root_path .../dataset/ \
  --data_path traffic.csv \
@@ -168,7 +168,7 @@ uv run -u run.py \
  --train_epochs 3 >../logs/LookBackWindow/FEDformer_traffic_$seqLen'_'$pred_len.log
 
 # weather
-uv run -u run.py \
+uv run python -u run.py \
  --is_training 1 \
  --root_path .../dataset/ \
  --data_path weather.csv \
@@ -194,7 +194,7 @@ done
 for seqLen in 26 52 78 104 130 156 208
 do
 # illness
-uv run -u run.py \
+uv run python -u run.py \
  --is_training 1 \
  --root_path .../dataset/ \
  --data_path national_illness.csv \
@@ -214,7 +214,7 @@ uv run -u run.py \
  --des 'Exp' \
  --itr 1 >../logs/LookBackWindow/FEDformer_ili_$seqLen'_'24.log
 
-uv run -u run.py \
+uv run python -u run.py \
  --is_training 1 \
  --root_path .../dataset/ \
  --data_path national_illness.csv \

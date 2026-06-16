@@ -13,7 +13,7 @@ data_name=custom
 seq_len=720
 gpu=1
 pred_len=96
-uv run -u run_longExp.py \
+uv run python -u run_longExp.py \
     --is_training 1 \
     --orthogonal_weight 0.04 \
     --root_path $root_path_name \
@@ -33,7 +33,7 @@ uv run -u run_longExp.py \
     --gpu 3 \
     --itr 1 --batch_size 512 --learning_rate 2e-2 > "$dir/${model_id_name}_${seq_len}_${pred_len}.log"
 pred_len=192
-uv run -u run_longExp.py \
+uv run python -u run_longExp.py \
     --is_training 1 \
     --orthogonal_weight 0.04 \
     --root_path $root_path_name \
@@ -53,7 +53,7 @@ uv run -u run_longExp.py \
     --gpu 3 \
     --itr 1 --batch_size 512 --learning_rate 2e-2 > "$dir/${model_id_name}_${seq_len}_${pred_len}.log"
 pred_len=336
-uv run -u run_longExp.py \
+uv run python -u run_longExp.py \
     --is_training 1 \
     --orthogonal_weight 0.08 \
     --root_path $root_path_name \
@@ -73,7 +73,7 @@ uv run -u run_longExp.py \
     --gpu 3 \
     --itr 1 --batch_size 512 --learning_rate 5e-2 > "$dir/${model_id_name}_${seq_len}_${pred_len}.log"
 pred_len=720
-uv run -u run_longExp.py \
+uv run python -u run_longExp.py \
     --is_training 1 \
     --orthogonal_weight 0.04 \
     --root_path $root_path_name \
