@@ -1,8 +1,12 @@
 # Core dependencies
-# For Kaggle with CUDA 12.1 (default as of 2026)
-torch>=2.0.0
-torchvision>=0.15.0
-numpy>=1.21.0
+# PyTorch with Python 3.8 compatibility
+# For Python 3.8: use torch<2.2.0
+# For Python 3.9+: use torch>=2.0.0
+torch>=1.13.0,<2.2.0; python_version < "3.9"
+torch>=2.0.0; python_version >= "3.9"
+torchvision>=0.14.0,<0.17.0; python_version < "3.9"
+torchvision>=0.15.0; python_version >= "3.9"
+numpy>=1.21.0,<2.0.0
 pandas>=1.3.0
 matplotlib>=3.4.0
 scikit-learn>=1.0.0
