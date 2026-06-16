@@ -12,6 +12,7 @@ from torch.optim import lr_scheduler
 
 import os
 import time
+import json
 
 import warnings
 import matplotlib.pyplot as plt
@@ -320,6 +321,20 @@ class Exp_Main(Exp_Basic):
 
         mae, mse, rmse, mape, mspe, rse, corr = metric(preds, trues)
         print('mse:{}, mae:{}, rse:{}'.format(mse, mae, rse))
+        
+        # Save mae and mse to JSON file
+        results = {
+            'setting': setting,
+            'mae': float(mae),
+            'mse': float(mse),
+            'rmse': float(rmse),
+            'rse': float(rse)
+        }
+        
+        with open(folder_path + 'metrics.json', 'w') as f:
+            json.dump(results, f, indent=4)
+        print(f'Results saved to {folder_path}metrics.json')
+        
         # f = open("result.txt", 'a')
         # f.write(setting + "  \n")
         # f.write('mse:{}, mae:{}, rse:{}'.format(mse, mae, rse))
