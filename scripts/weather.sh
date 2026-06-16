@@ -11,7 +11,7 @@ data_path_name=weather.csv
 model_id_name=weather
 data_name=custom
 seq_len=720
-gpu=1
+gpu=0
 pred_len=96
 uv run python -u run_longExp.py \
     --is_training 1 \

@@ -11,7 +11,7 @@ data_path_name=ETTm1.csv
 model_id_name=ETTm1
 data_name=ETTm1
 seq_len=720
-gpu=1
+gpu=0
 pred_len=96
 uv run python -u run_longExp.py \
     --is_training 1 \

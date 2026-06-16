@@ -11,7 +11,7 @@ data_path_name=ETTh1.csv
 model_id_name=ETTh1
 data_name=ETTh1
 seq_len=720
-gpu=1
+gpu=0
 
 pred_len=96
 uv run python -u run_longExp.py \
