@@ -12,7 +12,7 @@ model_name=Transformer
 
 for pred_len in 96 192 336 720
 do
-  python -u run_longExp.py \
+  uv run -u run_longExp.py \
     --random_seed $random_seed \
     --is_training 1 \
     --root_path ./dataset/ \
@@ -34,7 +34,7 @@ do
     --itr 1 \
     --train_epochs 1 >logs/LongForecasting/$model_name'_exchange_rate_'$pred_len.log
 
-  python -u run_longExp.py \
+  uv run -u run_longExp.py \
       --random_seed $random_seed \
       --is_training 1 \
       --root_path ./dataset/ \
@@ -55,7 +55,7 @@ do
       --des 'Exp' \
       --itr 1 >logs/LongForecasting/$model_name'_electricity_'$pred_len.log
 
-  python -u run_longExp.py \
+  uv run -u run_longExp.py \
     --random_seed $random_seed \
     --is_training 1 \
     --root_path ./dataset/ \
@@ -77,7 +77,7 @@ do
     --itr 1 \
     --train_epochs 3 >logs/LongForecasting/$model_name'_traffic_'$pred_len.log
 
-  python -u run_longExp.py \
+  uv run -u run_longExp.py \
     --random_seed $random_seed \
     --is_training 1 \
     --root_path ./dataset/ \
@@ -99,7 +99,7 @@ do
     --itr 1 \
     --train_epochs 2 >logs/LongForecasting/$model_name'_weather_'$pred_len.log
 
-  python -u run_longExp.py \
+  uv run -u run_longExp.py \
       --random_seed $random_seed \
       --is_training 1 \
       --root_path ./dataset/ \
@@ -120,7 +120,7 @@ do
       --des 'Exp' \
       --itr 1  >logs/LongForecasting/$model_name'_Etth1_'$pred_len.log
   
-  python -u run_longExp.py \
+  uv run -u run_longExp.py \
       --random_seed $random_seed \
       --is_training 1 \
       --root_path ./dataset/ \
@@ -141,7 +141,7 @@ do
       --des 'Exp' \
       --itr 1  >logs/LongForecasting/$model_name'_Etth2_'$pred_len.log
   
-  python -u run_longExp.py \
+  uv run -u run_longExp.py \
       --random_seed $random_seed \
       --is_training 1 \
       --root_path ./dataset/ \
@@ -162,7 +162,7 @@ do
       --des 'Exp' \
       --itr 1  >logs/LongForecasting/$model_name'_Ettm1_'$pred_len.log
 
-  python -u run_longExp.py \
+  uv run -u run_longExp.py \
       --random_seed $random_seed \
       --is_training 1 \
       --root_path ./dataset/ \
@@ -189,7 +189,7 @@ for model_name in Autoformer Informer Transformer
 do 
 for pred_len in 24 36 48 60
 do
-  python -u run_longExp.py \
+  uv run -u run_longExp.py \
     --random_seed $random_seed \
     --is_training 1 \
     --root_path ./dataset/ \
